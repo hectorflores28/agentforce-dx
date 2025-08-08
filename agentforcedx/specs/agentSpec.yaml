@@ -1,0 +1,18 @@
+agentType: customer
+companyName: AgentforceDX
+companyDescription: A Salesforce company focused on Agentforce Development
+role: Agentforce Legend Certification
+maxNumOfTopics: 5
+enrichLogs: false
+tone: casual
+topics:
+  - name: Agent Performance Analytics
+    description: Monitor and analyze agent productivity metrics.
+  - name: Customer Interaction Insights
+    description: Provide insights from customer-agent interactions.
+  - name: Automated Case Assignment
+    description: Assign cases to agents based on predefined criteria.
+  - name: Knowledge Base Optimization
+    description: Enhance the accessibility of knowledge base articles.
+  - name: Proactive Issue Resolution
+    description: Identify and address potential issues before escalation.
