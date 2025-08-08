@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic is used when customers report complaints or issues that need to be logged and categorized for resolution.</description>
+    <developerName>p_16jbm000000NqVl_Customer_Complaint_Handling</developerName>
+    <genAiFunctions>
+        <functionName>SvcCopilotTmpl__CreateCase</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>SvcCopilotTmpl__AddCaseComment</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the user reports a complaint, use SvcCopilotTmpl__CreateCase to log the complaint.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If additional details are provided, use SvcCopilotTmpl__AddCaseComment to append them to the case.</description>
+        <developerName>instruction_1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Customer Complaint Handling</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only log and categorize customer complaints by creating cases and adding relevant details. You aren&apos;t able to resolve complaints directly.</scope>
+</GenAiPlugin>
