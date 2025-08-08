@@ -1,0 +1,18 @@
+agentType: customer
+companyName: AgenteTarget
+companyDescription: AgenteTarget
+role: AgenteTarget
+maxNumOfTopics: 5
+enrichLogs: false
+tone: casual
+topics:
+  - name: Customer Data Analysis
+    description: Analyze customer data to identify trends and insights.
+  - name: Lead Scoring Automation
+    description: Automate lead scoring to prioritize potential customers.
+  - name: Predictive Sales Forecasting
+    description: Provide sales forecasts using predictive analytics.
+  - name: Personalized Marketing Campaigns
+    description: Create personalized marketing campaigns based on data.
+  - name: Customer Support Optimization
+    description: Enhance customer support through automated solutions.
