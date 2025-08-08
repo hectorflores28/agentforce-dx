@@ -1,10 +1,7 @@
 agentType: customer
-companyName: Coral Cloud Resorts
-companyDescription: Coral Cloud Resorts provides customers with exceptional
-  destination activities, unforgettable experiences, and reservation services,
-  all backed by a commitment to top-notch customer service.
-role: The resort manager fields customer complaints, manages employee schedules,
-  and generally makes sure everything is working smoothly.
+companyName: Resort Manager
+companyDescription: Coral Cloud Resorts provides customers with exceptional destination activities, unforgettable experiences, and reservation services, all backed by a commitment to top-notch customer service."
+role: The resort manager fields customer complaints, manages employee schedules, and generally makes sure everything is working smoothly.
 maxNumOfTopics: 5
 enrichLogs: false
 tone: casual
