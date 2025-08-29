@@ -1,14 +1,14 @@
 # Agentforce DX
 ¡Bienvenido al ecosistema de **Agentforce DX**!
-Aquí encontrarás todo lo necesario para iniciar, desarrollar y desplegar proyectos de IA y aplicaciones en Salesforce. Este repositorio centraliza múltiples proyectos Salesforce DX, cada uno con su propio enfoque y utilidades, para acelerar el desarrollo y la innovación en la plataforma.
+- (agentforcedx): Aquí encontrarás todo lo necesario para iniciar, desarrollar y desplegar proyectos de IA y aplicaciones en Salesforce. 
+Este repositorio centraliza múltiples proyectos Salesforce DX, cada uno con su propio enfoque y utilidades, para acelerar el desarrollo y la innovación en la plataforma.
 
 ## Proyectos Incluidos
-- **Housing Market Dashboard** (ModelsAPILWC): Aplicación de análisis inmobiliario con IA generativa.
-- **BOTanicals**: Plantilla base Salesforce DX lista para desarrollo, con herramientas modernas y ejemplos.
+- **Housing Market Dashboard** (models-api-lwc): Aplicación de análisis inmobiliario con IA generativa.
+- **BOTanicals**: (bot-anicals) Plantilla base Salesforce DX lista para desarrollo, con herramientas modernas y ejemplos.
 
 ## Housing Market Dashboard
 Este proyecto demuestra cómo implementar inteligencia artificial generativa en aplicaciones de Salesforce para el análisis de datos inmobiliarios.
-![Housing Market Dashboard](image.png)
 
 ### 📊 Descripción del proyecto
 Housing Market Dashboard es una aplicación basada en Lightning Web Components (LWC) que utiliza la API de AI Platform para analizar datos del mercado inmobiliario y generar resúmenes intuitivos. La aplicación toma datos detallados de condados y proporciona un análisis desde la perspectiva de un corredor de bienes raíces.
