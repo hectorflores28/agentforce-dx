@@ -1,65 +1,202 @@
-# Agentforce DX
+# Agentforce DX 🚀
+
 ¡Bienvenido al ecosistema de **Agentforce DX**!
-- (agentforcedx): Aquí encontrarás todo lo necesario para iniciar, desarrollar y desplegar proyectos de IA y aplicaciones en Salesforce. 
-Este repositorio centraliza múltiples proyectos Salesforce DX, cada uno con su propio enfoque y utilidades, para acelerar el desarrollo y la innovación en la plataforma.
 
-## Proyectos Incluidos
-- **Housing Market Dashboard** (models-api-lwc): Aplicación de análisis inmobiliario con IA generativa.
-- **BOTanicals**: (bot-anicals) Plantilla base Salesforce DX lista para desarrollo, con herramientas modernas y ejemplos.
+Este repositorio centraliza múltiples proyectos Salesforce DX especializados en inteligencia artificial y desarrollo moderno, cada uno con su propio enfoque y utilidades, para acelerar el desarrollo y la innovación en la plataforma Salesforce.
 
-## Housing Market Dashboard
-Este proyecto demuestra cómo implementar inteligencia artificial generativa en aplicaciones de Salesforce para el análisis de datos inmobiliarios.
+## 🎯 Proyectos Incluidos
 
-### 📊 Descripción del proyecto
-Housing Market Dashboard es una aplicación basada en Lightning Web Components (LWC) que utiliza la API de AI Platform para analizar datos del mercado inmobiliario y generar resúmenes intuitivos. La aplicación toma datos detallados de condados y proporciona un análisis desde la perspectiva de un corredor de bienes raíces.
+### 1. **Agentforce DX - Resort Manager AI Agent** 🏖️
+**Directorio:** `agentforcedx/`
 
-### 🛠️ Componentes Clave
-- **LWC:** `housing-dashboard.html`
-  - Interfaz de usuario interactiva para visualizar los análisis generados por IA.
-  - Diseño responsivo con indicadores de carga para una mejor experiencia de usuario.
-  - Contiene el botón "Analyze" para iniciar el proceso de análisis.
-- **Clases de Apex:**
-  - `DashboardController.cls`: Facilita la comunicación con la API de AI Platform para generar resúmenes de datos. Utiliza el modelo GPT-3.5 Turbo para el análisis.
-  - `HousingData.cls`: Almacena una constante con datos JSON de mercados inmobiliarios de varios condados, incluyendo estadísticas como ventas, precios medianos y asequibilidad.
+Un agente de inteligencia artificial conversacional especializado en la gestión de resorts turísticos, utilizando las capacidades más avanzadas de Salesforce Einstein AI y Agentforce para automatizar y optimizar las operaciones de resorts.
 
-## BOTanicals
-**BOTanicals** es una plantilla base para proyectos Salesforce DX, ideal para iniciar nuevos desarrollos en la plataforma. Incluye:
-- Estructura estándar de metadatos Salesforce (Apex, LWC, Aura, objetos, permisos, etc.).
-- Configuración avanzada de ESLint y Prettier para mantener la calidad y formato del código.
-- Soporte para pruebas unitarias con Jest (`sfdx-lwc-jest`).
-- Scripts de ejemplo en Apex y SOQL para pruebas rápidas.
-- Archivos de configuración para VSCode y Husky para hooks de git.
-- Listo para extender y personalizar según las necesidades del usuario.
+**Características principales:**
+- 🤖 **Bot de IA - Resort Manager**: Einstein Service Agent con plantilla AiCopilot__AgentforceAgent
+- 📦 **GenAI Planner Bundle**: Planificador ReAct para optimización de operaciones
+- 🔌 **5 Plugins Especializados**:
+  - Activity Reservation Assistance 📅
+  - Customer Complaint Handling 📝
+  - Employee Schedule Management 👥
+  - Service Quality Monitoring 📊
+  - Inventory Status Updates 📦
+- 🎯 **Caso de uso**: Coral Cloud Resorts - gestión automatizada de resorts turísticos
 
-## 🚀 Características Generales
-- Análisis de datos en tiempo real y generación de resúmenes bajo demanda (Housing Market Dashboard).
-- Plantilla lista para desarrollo ágil y colaborativo (BOTanicals).
-- Integración con AI Platform y modelos GPT para análisis avanzados.
-- Presentación clara de información compleja en un formato fácil de entender.
+### 2. **Housing Market Dashboard** 📊
+**Directorio:** `models-api-lwc/`
 
-## 💻 Tecnologías
-- Lightning Web Components (LWC)
-- Apex
-- AI Platform
-- JSON para la estructura de datos
-- Salesforce Lightning Design System (SLDS)
-- Herramientas de calidad y automatización (ESLint, Prettier, Jest, Husky)
+Aplicación de análisis inmobiliario con IA generativa que demuestra la integración de Lightning Web Components (LWC) con la API de AI Platform de Salesforce para el análisis de datos del mercado inmobiliario.
+
+**Componentes clave:**
+- 🏠 **LWC:** `modelsAPIDashboard` - Interfaz chat-like interactiva
+- 🧠 **Apex:** `DashboardController.cls` - Integración con AI Platform y GPT-3.5 Turbo
+- 📈 **Datos:** `HousingData.cls` - Datos JSON de mercados inmobiliarios de múltiples condados
+- 📊 **Análisis**: Generación automática de análisis desde perspectiva de corredor de bienes raíces
+
+### 3. **BOTanicals** 🌱
+**Directorio:** `bot-anicals/`
+
+Plantilla base moderna y completa para proyectos Salesforce DX, diseñada para acelerar el desarrollo de aplicaciones en la plataforma Salesforce con herramientas de desarrollo avanzadas y mejores prácticas integradas.
+
+**Características:**
+- 📦 **Estructura SFDX estándar** con configuración optimizada
+- 🛠️ **Herramientas integradas**: ESLint, Prettier, Jest, Husky
+- 🧪 **Testing Framework**: Configuración completa con `@salesforce/sfdx-lwc-jest`
+- 🔧 **Git Hooks**: Automatización con Husky y lint-staged
+- 📁 **Scripts de ejemplo**: Apex y SOQL para desarrollo rápido
+
+## 🚀 Características Generales del Ecosistema
+
+### ✨ Tecnologías y Herramientas
+- **Lightning Web Components (LWC)** - Componentes web modernos
+- **Apex** - Lógica de negocio en el servidor
+- **AI Platform** - Integración con modelos de IA generativa
+- **Einstein Bots** - Agentes conversacionales inteligentes
+- **GenAI Plugins** - Extensiones especializadas para IA
+- **Salesforce Lightning Design System (SLDS)** - Framework de diseño
+- **Jest** - Framework de pruebas unitarias
+- **ESLint + Prettier** - Calidad y formato de código
+- **Husky** - Automatización de Git hooks
+
+### 🎯 Casos de Uso Especializados
+- **Gestión de Resorts**: Automatización completa de operaciones turísticas
+- **Análisis Inmobiliario**: IA generativa para análisis de mercados
+- **Desarrollo Ágil**: Plantilla base para proyectos Salesforce DX
 
 ## 🔧 Instalación y Uso
-1. Clona este repositorio en tu entorno de desarrollo Salesforce DX.
-2. Despliega los componentes en el entorno de destino utilizando SFDX.
-3. Añade el componente LWC correspondiente a tu aplicación o página Lightning.
-4. Navega al componente en tu aplicación Salesforce.
-5. Haz clic en el botón "Analyze" (si aplica) para generar un resumen detallado.
-6. Revisa el análisis generado por la IA o utiliza la plantilla para tu propio desarrollo.
 
-## 📝 Contribuciones y Desarrollo
-¿Interesado en contribuir o extender este ecosistema? ¡Tus aportes son bienvenidos! Por favor, sigue estas pautas:
-- Haz fork del repositorio.
-- Crea una rama para tu característica (git checkout -b feature/amazing-feature).
-- Haz commit de tus cambios (git commit -m 'Add some amazing feature').
-- Haz push a la rama (git push origin feature/amazing-feature).
-- Abre un Pull Request.
+### Prerrequisitos
+- [Salesforce CLI](https://developer.salesforce.com/tools/sfdxcli)
+- [Node.js](https://nodejs.org/) (versión 16 o superior)
+- [VS Code](https://code.visualstudio.com/) con extensiones Salesforce
 
-## Licencia
-Este proyecto está licenciado bajo los términos de la Licencia MIT.
+### Instalación por Proyecto
+
+#### 1. Agentforce DX (Resort Manager)
+```bash
+cd agentforcedx
+npm install
+sfdx force:auth:web:login -a agentforcedx
+sfdx force:source:deploy -p force-app/main/default
+```
+
+#### 2. Housing Market Dashboard
+```bash
+cd models-api-lwc
+npm install
+sfdx force:auth:web:login -a housing-dashboard
+sfdx force:source:deploy -p force-app/main/default
+```
+
+#### 3. BOTanicals (Plantilla Base)
+```bash
+cd bot-anicals
+npm install
+sfdx force:auth:web:login -a botanicals
+sfdx force:org:create -f config/project-scratch-def.json -a BOTanicalsScratch
+sfdx force:source:deploy -p force-app
+```
+
+## 📁 Estructura del Repositorio
+
+```
+agentforce-dx/
+│ 
+├── agentforcedx/                    # Resort Manager AI Agent
+│  
+├── models-api-lwc/                  # Housing Market Dashboard
+│   
+├── bot-anicals/                     # Plantilla Base
+│   
+└ README.md                        # Este archivo
+```
+
+## 🛠️ Scripts Disponibles (por proyecto)
+
+### Desarrollo
+```bash
+npm run lint                    # Ejecutar ESLint
+npm run prettier               # Formatear código
+npm run prettier:verify        # Verificar formato
+```
+
+### Testing
+```bash
+npm run test                   # Ejecutar todas las pruebas
+npm run test:unit             # Pruebas unitarias
+npm run test:unit:watch       # Pruebas en modo watch
+npm run test:unit:coverage    # Pruebas con cobertura
+```
+
+## 🎯 Casos de Uso por Proyecto
+
+### Agentforce DX - Resort Manager
+- **Para Clientes**: Reservas de actividades, soporte al cliente, información del resort
+- **Para Empleados**: Gestión de horarios, monitoreo de calidad, gestión de inventario
+- **Canales Soportados**: Apple Business Chat, Facebook Messenger, WhatsApp, LINE, SMS
+
+### Housing Market Dashboard
+- **Análisis Automático**: Generación de análisis inmobiliario mediante IA
+- **Interfaz Intuitiva**: Chat-like interface con indicadores de carga
+- **Datos en Tiempo Real**: Procesamiento de datos inmobiliarios actualizados
+- **Perspectiva Profesional**: Análisis desde punto de vista de corredor de bienes raíces
+
+### BOTanicals
+- **Nuevos Proyectos**: Base sólida para iniciar desarrollos Salesforce DX
+- **Equipos Colaborativos**: Herramientas de calidad de código integradas
+- **Desarrollo Ágil**: Testing automatizado y hooks de Git
+- **Mejores Prácticas**: Configuración estándar con ESLint, Prettier, Jest
+
+## 🔍 Configuración Avanzada
+
+### AI Platform (Housing Market Dashboard)
+1. Habilitar AI Platform en tu org de Salesforce
+2. Configurar el modelo GPT-3.5 Turbo (`sfdc_ai__DefaultGPT35Turbo`)
+3. Verificar permisos de acceso a la API de AI Platform
+
+### Einstein Bots (Agentforce DX)
+1. Activar el bot "Resort Manager" desde Setup > Einstein Bots
+2. Configurar canales de mensajería según necesidades
+3. Personalizar variables de contexto y flujos de conversación
+
+### Herramientas de Desarrollo (Todos los proyectos)
+- **VS Code Extensions**: Salesforce Extension Pack, ESLint, Prettier, Jest Runner
+- **Git Hooks**: Automatización con Husky para calidad de código
+- **Testing**: Configuración completa con Jest y cobertura de código
+
+## 📝 Desarrollo y Contribución
+
+### Flujo de Trabajo Recomendado
+1. **Fork** del repositorio
+2. **Crear rama** para tu característica (`git checkout -b feature/amazing-feature`)
+3. **Desarrollar** con validación automática (ESLint + Prettier)
+4. **Ejecutar pruebas** antes de commit
+5. **Commit** cambios (`git commit -m 'Add some amazing feature'`)
+6. **Push** a la rama (`git push origin feature/amazing-feature`)
+7. **Abrir Pull Request**
+
+### Convenciones de Código
+- Seguir las reglas de ESLint configuradas
+- Usar Prettier para formateo automático
+- Escribir pruebas unitarias para nuevas funcionalidades
+- Documentar cambios significativos en metadatos
+
+## 🤝 Soporte y Recursos
+
+### Documentación
+- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/)
+- [Lightning Web Components](https://developer.salesforce.com/docs/component-library/documentation/en/lwc)
+- [AI Platform Documentation](https://developer.salesforce.com/docs/atlas.en-us.ai_platform.meta/ai_platform/)
+- [Einstein Bots](https://developer.salesforce.com/docs/atlas.en-us.bots.meta/bots/)
+
+### Herramientas
+- [Salesforce CLI](https://developer.salesforce.com/tools/sfdxcli)
+- [VS Code Salesforce Extension Pack](https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode)
+
+## 📄 Licencia
+
+Este proyecto está licenciado bajo los términos de la **Licencia MIT**.
+
+---
+
+**Agentforce DX** - Transformando el desarrollo Salesforce con IA conversacional y herramientas modernas. 🚀✨
