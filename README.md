@@ -45,6 +45,18 @@ Plantilla base moderna y completa para proyectos Salesforce DX, diseñada para a
 - 🔧 **Git Hooks**: Automatización con Husky y lint-staged
 - 📁 **Scripts de ejemplo**: Apex y SOQL para desarrollo rápido
 
+### 4. **trailhead** 
+**Directorio:** `trailhead/`
+
+Contiene proyectos de multiples apps asi como fragmentos de codigo Apex
+
+**Características:**
+- 📦 **Estructura SFDX estándar** con configuración optimizada
+- 🛠️ **Herramientas integradas**: ESLint, Prettier, Jest, Husky
+- 🧪 **Testing Framework**: Configuración completa con `@salesforce/sfdx-lwc-jest`
+- 🔧 **Git Hooks**: Automatización con Husky y lint-staged
+- 📁 **Scripts de ejemplo**: Apex y SOQL para desarrollo rápido
+
 ## 🚀 Características Generales del Ecosistema
 
 ### ✨ Tecnologías y Herramientas
@@ -97,6 +109,15 @@ sfdx force:org:create -f config/project-scratch-def.json -a BOTanicalsScratch
 sfdx force:source:deploy -p force-app
 ```
 
+#### 4. trailhead
+```bash
+cd trailhead/project/
+npm install
+sfdx force:auth:web:login -a trailhead
+sfdx force:org:create -f config/project-scratch-def.json -a Project
+sfdx force:source:deploy -p force-app
+```
+
 ## 📁 Estructura del Repositorio
 
 ```
@@ -108,7 +129,9 @@ agentforce-dx/
 │   
 ├── bot-anicals/                     # Plantilla Base
 │   
-└ README.md                        # Este archivo
+├── trailhead/                       # Directorio de Multiples Proyectos
+│   
+└ README.md                          # Este archivo
 ```
 
 ## 🛠️ Scripts Disponibles (por proyecto)
@@ -146,6 +169,9 @@ npm run test:unit:coverage    # Pruebas con cobertura
 - **Equipos Colaborativos**: Herramientas de calidad de código integradas
 - **Desarrollo Ágil**: Testing automatizado y hooks de Git
 - **Mejores Prácticas**: Configuración estándar con ESLint, Prettier, Jest
+
+### Trailhead
+- **Multiples Implementaciones**: Una base solida para empezar a implementar codigo en cualquier organización solo es adaptar y asegurarse que la solución y el mapeo es el adecuado.
 
 ## 🔍 Configuración Avanzada
 

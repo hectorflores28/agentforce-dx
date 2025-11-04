@@ -1,0 +1,7 @@
+<template> 
+    <template lwc:if={accountsByRevenue.data}> <h3>Accounts by Revenue:</h3>
+        <template for:each={accountsByRevenue.data} for:item="account">
+            <p key={account.Id}>{account.Name}</p>
+        </template>
+    </template>
+</template>
