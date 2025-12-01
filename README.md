@@ -45,8 +45,8 @@ Plantilla base moderna y completa para proyectos Salesforce DX, diseñada para a
 - 🔧 **Git Hooks**: Automatización con Husky y lint-staged
 - 📁 **Scripts de ejemplo**: Apex y SOQL para desarrollo rápido
 
-### 4. **trailhead** 
-**Directorio:** `trailhead/`
+### 4. **Apex Examples** 
+**Directorio:** `apex-examples/`
 
 Contiene proyectos de multiples apps asi como fragmentos de codigo Apex
 
@@ -109,11 +109,11 @@ sfdx force:org:create -f config/project-scratch-def.json -a BOTanicalsScratch
 sfdx force:source:deploy -p force-app
 ```
 
-#### 4. trailhead
+#### 4. Apex Examples
 ```bash
-cd trailhead/project/
+cd apex-examples/project/
 npm install
-sfdx force:auth:web:login -a trailhead
+sfdx force:auth:web:login -a apex-examples
 sfdx force:org:create -f config/project-scratch-def.json -a Project
 sfdx force:source:deploy -p force-app
 ```
@@ -129,7 +129,7 @@ agentforce-dx/
 │   
 ├── bot-anicals/                     # Plantilla Base
 │   
-├── trailhead/                       # Directorio de Multiples Proyectos
+├── apex-examples/                       # Directorio de Multiples Proyectos
 │   
 └ README.md                          # Este archivo
 ```
@@ -170,7 +170,7 @@ npm run test:unit:coverage    # Pruebas con cobertura
 - **Desarrollo Ágil**: Testing automatizado y hooks de Git
 - **Mejores Prácticas**: Configuración estándar con ESLint, Prettier, Jest
 
-### Trailhead
+### apex-examples
 - **Multiples Implementaciones**: Una base solida para empezar a implementar codigo en cualquier organización solo es adaptar y asegurarse que la solución y el mapeo es el adecuado.
 
 ## 🔍 Configuración Avanzada
