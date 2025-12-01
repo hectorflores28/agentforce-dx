@@ -1,0 +1,32 @@
+<apex:page controller="NewCaseListController">
+    <apex:pageBlock title="Casos Nuevos ({!NewCases.size})">
+        
+        <table class="list" border="0" cellpadding="0" cellspacing="0" style="width:100%;">
+            <thead>
+                <tr class="headerRow">
+                    <th scope="col" class="headerCell">Número de Caso (Enlace de Detalle)</th>
+                    <th scope="col" class="headerCell">ID de Caso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <apex:repeat value="{!NewCases}" var="case">
+                    <tr class="dataRow">
+                        <td class="dataCell">
+                            <apex:outputLink value="{!case.Id}">
+                                {!case.CaseNumber}
+                            </apex:outputLink>
+                        </td>
+                        
+                        <td class="dataCell">
+                            {!case.Id}
+                        </td>
+                    </tr>
+                </apex:repeat>
+            </tbody>
+        </table>
+        </apex:pageBlock>
+    
+    <div style="margin-top: 20px; padding: 10px; background-color: #f0f0f0; border-radius: 5px;">
+        <p><strong>Nota:</strong> Esta lista se actualiza en tiempo real mostrando los casos con Status = 'New'.</p>
+    </div>
+</apex:page>
