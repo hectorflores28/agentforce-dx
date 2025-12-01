@@ -1,0 +1,36 @@
+<apex:page standardController="Account" recordSetVar="accounts">
+    <!-- 
+        1. standardController="Account": Define el objeto principal.
+        2. recordSetVar="accounts": Convierte esta página en un controlador de lista, 
+           haciendo disponible una lista de registros llamada 'accounts'.
+    -->
+    
+    <apex:sectionHeader title="Lista de Cuentas" subtitle="Cuentas Disponibles"/>
+    
+    <apex:pageBlock title="Cuentas Encontradas ({!accounts.size} en total)">
+        
+        <!-- Usamos una lista HTML no ordenada para el formato -->
+        <ul>
+            
+            <!-- Itera sobre la lista de cuentas proporcionada por recordSetVar="accounts" -->
+            <apex:repeat value="{!accounts}" var="a">
+                
+                <!-- Anida un elemento HTML de lista <li> -->
+                <li>
+                    <!-- 
+                        Anida apex:outputLink para crear el enlace.
+                        El 'value' /{ID} es la sintaxis universal en Salesforce para la página de detalles de un registro.
+                    -->
+                    <apex:outputLink value="/{!a.id}">
+                        <!-- Muestra el nombre de la Cuenta como texto del enlace -->
+                        <apex:outputText value="{!a.Name}"/>
+                    </apex:outputLink>
+                </li>
+                
+            </apex:repeat>
+            
+        </ul>
+        
+    </apex:pageBlock>
+    
+</apex:page>
