@@ -1,0 +1,30 @@
+<apex:page >
+    <apex:sectionHeader title="Información del Usuario" subtitle="Detalles de la Sesión Actual"/>
+    
+    <apex:pageBlock title="Usuario con Sesión Iniciada">
+        <apex:pageBlockSection columns="1">
+            
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="ID del Usuario:"/>
+                <apex:outputText value="{!$User.Id}"/>
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Nombre Completo:"/>
+                <apex:outputText value="{!$User.FirstName} {!$User.LastName}"/>
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Correo Electrónico:"/>
+                <apex:outputText value="{!$User.Email}"/>
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Nombre de Usuario:"/>
+                <apex:outputText value="{!$User.Username}"/>
+            </apex:pageBlockSectionItem>
+            
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+</apex:page>
