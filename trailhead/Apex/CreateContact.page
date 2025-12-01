@@ -1,0 +1,43 @@
+<apex:page standardController="Contact">
+    <!-- El controlador estándar 'Contact' proporciona un registro de contacto vacío 
+         para el formulario y maneja la acción 'save'. -->
+    
+    <apex:sectionHeader title="Crear Nuevo Contacto" subtitle="Introduzca la información básica"/>
+    
+    <!-- 1. Componente apex:form: Necesario para que el botón commandButton pueda enviar los datos. -->
+    <apex:form >
+        
+        <apex:pageBlock title="Detalles del Nuevo Contacto">
+            
+            <apex:pageBlockSection title="Campos Requeridos" columns="1">
+                
+                <!-- 2. apex:inputField para First Name (Nombre) -->
+                <!-- Vinculado al campo FirstName del objeto Contact. -->
+                <apex:inputField value="{!Contact.FirstName}"/>
+                
+                <!-- 3. apex:inputField para Last Name (Apellido) -->
+                <!-- Vinculado al campo LastName del objeto Contact. -->
+                <apex:inputField value="{!Contact.LastName}"/>
+                
+                <!-- 4. apex:inputField para Email (Correo electrónico) -->
+                <!-- Vinculado al campo Email del objeto Contact. -->
+                <apex:inputField value="{!Contact.Email}"/>
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons location="bottom">
+                
+                <!-- 5. apex:commandButton: Llama a la acción 'save' del controlador estándar. -->
+                <!-- Tras la inserción exitosa, el controlador redirige automáticamente al registro de detalle. -->
+                <apex:commandButton action="{!save}" value="Guardar Contacto"/>
+                
+                <!-- Botón de cancelación opcional para volver a la página anterior -->
+                <apex:commandButton action="{!cancel}" value="Cancelar" immediate="true"/>
+                
+            </apex:pageBlockButtons>
+            
+        </apex:pageBlock>
+        
+    </apex:form>
+    
+</apex:page>
