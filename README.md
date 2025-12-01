@@ -212,8 +212,6 @@ npm run test:unit:coverage    # Pruebas con cobertura
 ### Documentación
 - [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/)
 - [Lightning Web Components](https://developer.salesforce.com/docs/component-library/documentation/en/lwc)
-- [AI Platform Documentation](https://developer.salesforce.com/docs/atlas.en-us.ai_platform.meta/ai_platform/)
-- [Einstein Bots](https://developer.salesforce.com/docs/atlas.en-us.bots.meta/bots/)
 
 ### Herramientas
 - [Salesforce CLI](https://developer.salesforce.com/tools/sfdxcli)
