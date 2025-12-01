@@ -7,7 +7,7 @@
     
     <apex:sectionHeader title="Lista de Cuentas" subtitle="Cuentas Disponibles"/>
     
-    <apex:pageBlock title="Cuentas Encontradas ({!accounts.size} en total)">
+    <apex:pageBlock title="Cuentas Encontradas ({!accounts} en total)">
         
         <!-- Usamos una lista HTML no ordenada para el formato -->
         <ul>
