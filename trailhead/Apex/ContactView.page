@@ -1,0 +1,24 @@
+<apex:page standardController="Contact"></apex:page>
+<apex:sectionHeader title="Detalles del Contacto" subtitle="{!Contact.Name}" />
+
+<apex:pageBlock title="Información Clave del Contacto">
+    <apex:pageBlockSection columns="1">
+
+        <apex:pageBlockSectionItem>
+            <apex:outputLabel value="Primer Nombre:" />
+            <apex:outputText value="{!Contact.FirstName}" />
+        </apex:pageBlockSectionItem>
+
+        <apex:pageBlockSectionItem>
+            <apex:outputLabel value="Apellido:" />
+            <apex:outputText value="{!Contact.LastName}" />
+        </apex:pageBlockSectionItem>
+
+        <apex:pageBlockSectionItem>
+            <apex:outputLabel value="Correo Electrónico del Propietario:" />
+            <apex:outputText value="{!Contact.Owner.Email}" />
+        </apex:pageBlockSectionItem>
+
+    </apex:pageBlockSection>
+</apex:pageBlock>
+</apex:page>
