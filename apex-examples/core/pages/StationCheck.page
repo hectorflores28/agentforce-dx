@@ -1,22 +1,33 @@
-<apex:page sidebar="false"><h1>Station Status</h1>  <apex:form id="engineReadinessChecklist">
-      <apex:pageBlock title="Flight Systems Checklist">
-         <apex:pageBlockSection title="Engines">
-            <apex:inputCheckbox immediate="true"/>Engine 1
-            <apex:inputCheckbox immediate="true"/>Engine 2
-            <apex:inputCheckbox immediate="true"/>Engine 3
-            <apex:inputCheckbox immediate="true"/>Engine 4
-            <apex:inputCheckbox immediate="true"/>Engine 5
-            <apex:inputCheckbox immediate="true"/>Engine 6
-         </apex:pageBlockSection>
-         <apex:pageBlockSection title="Fuel Tanks">
-            <apex:inputCheckbox immediate="true"/>Tank 1
-            <apex:inputCheckbox immediate="true"/>Tank 2
-            <apex:inputCheckbox immediate="true"/>Tank 3
-            <apex:inputCheckbox immediate="true"/>Tank 4
-            <apex:inputCheckbox immediate="true"/>Tank 5
-            <apex:inputCheckbox immediate="true"/>Tank 6
-         </apex:pageBlockSection>
-         <apex:pageBlockButtons>
-            <apex:commandButton value="Save" action="{!save}"/> </apex:pageBlockButtons>
-      </apex:pageBlock>
-   </apex:form></apex:page>
+<apex:page sidebar="false" controller="StationCheckController">
+    <h1>Station Status</h1>
+    
+    <apex:pageMessages /> 
+    
+    <apex:form id="engineReadinessChecklist">
+        <apex:pageBlock title="Flight Systems Checklist">
+            
+            <apex:pageBlockSection title="Engines">
+                <apex:inputCheckbox value="{!engine1Checked}" immediate="true"/>Engine 1
+                <apex:inputCheckbox value="{!engine2Checked}" immediate="true"/>Engine 2
+                <apex:inputCheckbox value="{!engine3Checked}" immediate="true"/>Engine 3
+                <apex:inputCheckbox value="{!engine4Checked}" immediate="true"/>Engine 4
+                <apex:inputCheckbox value="{!engine5Checked}" immediate="true"/>Engine 5
+                <apex:inputCheckbox value="{!engine6Checked}" immediate="true"/>Engine 6
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Fuel Tanks">
+                <apex:inputCheckbox value="{!tank1Checked}" immediate="true"/>Tank 1
+                <apex:inputCheckbox value="{!tank2Checked}" immediate="true"/>Tank 2
+                <apex:inputCheckbox value="{!tank3Checked}" immediate="true"/>Tank 3
+                <apex:inputCheckbox value="{!tank4Checked}" immediate="true"/>Tank 4
+                <apex:inputCheckbox value="{!tank5Checked}" immediate="true"/>Tank 5
+                <apex:inputCheckbox value="{!tank6Checked}" immediate="true"/>Tank 6
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save}"/> 
+            </apex:pageBlockButtons>
+        
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
