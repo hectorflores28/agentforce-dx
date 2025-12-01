@@ -111,7 +111,7 @@ sfdx force:source:deploy -p force-app
 
 #### 4. Apex Examples
 ```bash
-cd apex-examples/project/
+cd apex-examples/project/{project_name}
 npm install
 sfdx force:auth:web:login -a apex-examples
 sfdx force:org:create -f config/project-scratch-def.json -a Project
@@ -129,7 +129,7 @@ agentforce-dx/
 │   
 ├── bot-anicals/                     # Plantilla Base
 │   
-├── apex-examples/                       # Directorio de Multiples Proyectos
+├── apex-examples/                   # Directorio de (Clases, Triggers, Proyectos)
 │   
 └ README.md                          # Este archivo
 ```
@@ -170,7 +170,7 @@ npm run test:unit:coverage    # Pruebas con cobertura
 - **Desarrollo Ágil**: Testing automatizado y hooks de Git
 - **Mejores Prácticas**: Configuración estándar con ESLint, Prettier, Jest
 
-### apex-examples
+### Apex Examples
 - **Multiples Implementaciones**: Una base solida para empezar a implementar codigo en cualquier organización solo es adaptar y asegurarse que la solución y el mapeo es el adecuado.
 
 ## 🔍 Configuración Avanzada
